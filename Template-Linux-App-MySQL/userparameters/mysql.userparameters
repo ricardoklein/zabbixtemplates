@@ -1,12 +1,12 @@
 #
 # MySQL
 #
-UserParameter=mysql.status[*],echo "show global status where Variable_name='$1';" | mysql -N | awk '{print $$2}'
-UserParameter=mysql.size[*],echo "select sum($(case "$3" in both|"") echo "data_length+index_length";; data|index) echo "$3_length";; free) echo "data_free";; esac)) from information_schema.tables$([[ "$1" = "all" || ! "$1" ]] || echo " where table_schema='$1'")$([[ "$2" = "all" || ! "$2" ]] || echo "and table_name='$2'");" | mysql -N
-UserParameter=mysql.ping,mysqladmin ping | grep -c alive
-UserParameter=mysql.version,mysql -V
-UserParameter=mysql.numberofdatabases[*],echo "SELECT COUNT(*) FROM information_schema.SCHEMATA WHERE SCHEMA_NAME <> 'mysql' AND SCHEMA_NAME <> 'information_schema' AND SCHEMA_NAME <> 'performance_schema';" | mysql -N --batch --skip-column-names
+UserParameter=mysql.status[*],echo "show global status where Variable_name='$1';" | HOME=/etc/zabbix mysql -N | awk '{print $$2}'
+UserParameter=mysql.size[*],echo "select sum($(case "$3" in both|"") echo "data_length+index_length";; data|index) echo "$3_length";; free) echo "data_free";; esac)) from information_schema.tables$([[ "$1" = "all" || ! "$1" ]] || echo " where table_schema='$1'")$([[ "$2" = "all" || ! "$2" ]] || echo "and table_name='$2'");" | HOME=/etc/zabbix mysql -N
+UserParameter=mysql.ping,HOME=/etc/zabbix mysqladmin ping | grep -c alive
+UserParameter=mysql.version,HOME=/etc/zabbix mysql -V
+UserParameter=mysql.numberofdatabases[*],echo "SELECT COUNT(*) FROM information_schema.SCHEMATA WHERE SCHEMA_NAME <> 'mysql' AND SCHEMA_NAME <> 'information_schema' AND SCHEMA_NAME <> 'performance_schema';" | HOME=/etc/zabbix mysql -N --batch --skip-column-names
 UserParameter=mysql.database.lld[*],/etc/zabbix/scripts/mysql_database_lld.sh 
-UserParameter=mysql.numberoftables[*],echo "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = '$1';" | mysql -N --batch --skip-column-names 
-UserParameter=mysql.databasesize[*],echo "SELECT sum( data_length + index_length ) FROM information_schema.TABLES WHERE table_schema='$1';" | mysql -N --batch --skip-column-names
-UserParameter=mysql.mysqlcheck[*],echo -ne "$(mysqlcheck -As | grep error | wc -l)"
+UserParameter=mysql.numberoftables[*],echo "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = '$1';" | HOME=/etc/zabbix mysql -N --batch --skip-column-names 
+UserParameter=mysql.databasesize[*],echo "SELECT sum( data_length + index_length ) FROM information_schema.TABLES WHERE table_schema='$1';" | HOME=/etc/zabbix mysql -N --batch --skip-column-names
+UserParameter=mysql.mysqlcheck[*],echo -ne "$(HOME=/etc/zabbix mysqlcheck -As | grep error | wc -l)"

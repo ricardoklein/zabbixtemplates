@@ -6,15 +6,17 @@ Uses the ".my.cnf" file to setup user/password to access the database because I 
 
 ##This template includes:
 * Database names Low Level Discovery with prototype items for:
- * Databases size
- * Databases number of tables
-* Transactions (insert, update, etc) statistics
-* Total databases size
-* Service status
-* MySQL version
+ * Size of earch database;
+ * Number of Tables for each database;
+* Number of databases;
+* Transactions (insert, update, etc) statistics;
+* Total databases size;
+* Service status and Uptime;
+* MySQL version;
+* Check for corrupt tables (mysqlcheck);
 
 ## ToDo
-* Add LLD for InnoDB data files
+* Add LLD for InnoDB data files (maybe?)
 
 ## INSTALL
 * Import the template_zabbix_linux_app_mysql.xml template file;
