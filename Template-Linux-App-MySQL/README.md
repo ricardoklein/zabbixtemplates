@@ -3,6 +3,9 @@
 Based on the zabbix mysql template that comes with zabbix. <br>
 This template uses all items as ACTIVE items. <br>
 Uses the ".my.cnf" file to setup user/password to access the database because I dont think its secure to send it as item parameter over the web. <br>
+* Tested on Zabbix 2.4.7 with:
+ * MariaDB 5.5
+ * MySQL 5.1 
 
 ##This template includes:
 * Database names Low Level Discovery with prototype items for:
