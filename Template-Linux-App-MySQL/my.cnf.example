@@ -1,0 +1,4 @@
+[client]
+user=zabbixdatabaseuser
+host=localhost
+password=zabbixdatabasepassword

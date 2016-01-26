@@ -1,0 +1,10 @@
+#
+# MySQL
+#
+UserParameter=mysql.status[*],echo "show global status where Variable_name='$1';" | mysql -N | awk '{print $$2}'
+UserParameter=mysql.size[*],echo "select sum($(case "$3" in both|"") echo "data_length+index_length";; data|index) echo "$3_length";; free) echo "data_free";; esac)) from information_schema.tables$([[ "$1" = "all" || ! "$1" ]] || echo " where table_schema='$1'")$([[ "$2" = "all" || ! "$2" ]] || echo "and table_name='$2'");" | mysql -N
+UserParameter=mysql.ping,mysqladmin ping | grep -c alive
+UserParameter=mysql.version,mysql -V
+UserParameter=mysql.database.lld[*],/etc/zabbix/scripts/mysql_database_lld.sh 
+UserParameter=mysql.numberoftables[*],echo "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = '$1';" | mysql -N --batch --skip-column-names 
+UserParameter=mysql.databasesize[*],echo "SELECT sum( data_length + index_length ) FROM information_schema.TABLES WHERE table_schema='$1';" | mysql -N --batch --skip-column-names
