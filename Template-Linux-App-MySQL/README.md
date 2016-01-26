@@ -5,7 +5,7 @@ This template uses all items as ACTIVE items. <br>
 Uses the ".my.cnf" file to setup user/password to access the database because I dont think its secure to send it as item parameter over the web. <br>
 
 ##This template includes:
-* Database names Low Level Discovery with prototype ítens for:
+* Database names Low Level Discovery with prototype items for:
  * Databases size
  * Databases number of tables
 * Transactions (insert, update, etc) statistics
@@ -14,7 +14,7 @@ Uses the ".my.cnf" file to setup user/password to access the database because I 
 * MySQL version
 
 ## ToDo
-* Add LLD and check of InnoDB data files
+* Add LLD for InnoDB data files
 
 ## INSTALL
 * Import the template_zabbix_linux_app_mysql.xml template file;
@@ -23,6 +23,6 @@ Uses the ".my.cnf" file to setup user/password to access the database because I 
 * Upload the userparameters file to: /etc/zabbix/zabbix_agentd.conf.d/mysql.userparamters (or, where your zabbix user parameters are saved)
 * Upload your .my.cnf configuration file to the zabbix user $HOME (here it is /etc/zabbix)
 
-# OBS
+# PS
 I always use my zabbix_agentd.conf file with "Include=/etc/zabbix/zabbix_agentd.conf.d/", so I can save all user.parameters files in there.
 
