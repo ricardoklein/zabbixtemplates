@@ -1,0 +1,11 @@
+#MEGACLI USER PARAMETERS
+
+UserParameter=megacli.controller.lld[*],/etc/zabbix/scripts/megacli_controller_lld.sh $1
+UserParameter=megacli.controller.productname[*],/etc/zabbix/scripts/megacli_controller_info.sh --ProductName $1 $2
+UserParameter=megacli.controller.serialnumber[*],/etc/zabbix/scripts/megacli_controller_info.sh --SerialNumber $1 $2
+UserParameter=megacli.controller.FWPackageBuild[*],/etc/zabbix/scripts/megacli_controller_info.sh --FWPackageBuild $1 $2
+UserParameter=megacli.controller.BIOSVersion[*],/etc/zabbix/scripts/megacli_controller_info.sh --BIOSVersion $1 $2
+UserParameter=megacli.controller.TotalVirtualDrives[*],/etc/zabbix/scripts/megacli_controller_info.sh --TotalVirtualDrives $1 $2
+UserParameter=megacli.controller.VirtualDrivesDegraded[*],/etc/zabbix/scripts/megacli_controller_info.sh --VirtualDrivesDegraded $1 $2
+UserParameter=megacli.controller.CriticalPhysicalDisks[*],/etc/zabbix/scripts/megacli_controller_info.sh --CriticalPhysicalDisks $1 $2
+UserParameter=megacli.controller.FailedPhysicalDisks[*],/etc/zabbix/scripts/megacli_controller_info.sh --FailedPhysicalDisks $1 $2
