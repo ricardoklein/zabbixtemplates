@@ -3,7 +3,7 @@
 Based on the zabbix mysql template that comes with zabbix. <br>
 This template uses all items as ACTIVE items. <br>
 Uses the ".my.cnf" file to setup user/password to access the database because I dont think its secure to send it as item parameter over the web. <br>
-* Tested on Zabbix 2.4.7 with:
+* Tested on Zabbix 3.0.0 with:
  * MariaDB 5.5
  * MySQL 5.1 
 
@@ -17,6 +17,7 @@ Uses the ".my.cnf" file to setup user/password to access the database because I 
 * Service status and Uptime;
 * MySQL version;
 * Check for corrupt tables (mysqlcheck);
+* Get MySQL/MariaDB memory and processor usage (needs zabbix 3.x);
 
 ## ToDo
 * Add LLD for InnoDB data files (maybe?)
