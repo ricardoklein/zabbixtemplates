@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-03-09T17:35:17Z</date>
+    <date>2016-03-09T18:17:25Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -30,9 +30,9 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>net.tcp.listen[{$OPENFIREADMINPORT}]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
-                    <trends>120</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -73,9 +73,9 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>net.tcp.listen[{$OPENFIREXMPPPORT}]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
-                    <trends>120</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -116,13 +116,13 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.cpu.util[,{$OPENFIREUSER}]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
-                    <trends>120</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
-                    <units>B</units>
+                    <units/>
                     <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -159,9 +159,9 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.mem[,{$OPENFIREUSER},,,rss]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
-                    <trends>120</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -202,9 +202,9 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.num[,{$OPENFIREUSER}]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
-                    <trends>120</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
