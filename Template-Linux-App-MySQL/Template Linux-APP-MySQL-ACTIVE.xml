@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-03-09T14:45:55Z</date>
+    <date>2016-03-09T17:58:37Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -76,7 +76,7 @@ Returns &quot;0&quot; if no errors found.</description>
                     <snmp_oid/>
                     <key>mysql.numberofdatabases</key>
                     <delay>3600</delay>
-                    <history>1</history>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -123,7 +123,7 @@ Returns &quot;0&quot; if no errors found.</description>
                     <key>mysql.ping</key>
                     <delay>180</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -171,7 +171,7 @@ Returns &quot;0&quot; if no errors found.</description>
                     <key>mysql.size</key>
                     <delay>600</delay>
                     <history>7</history>
-                    <trends>90</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -216,7 +216,7 @@ UserParameter=mysql.size[*],echo &quot;select sum($(case &quot;$3&quot; in both|
                     <key>mysql.status[Bytes_received]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -262,7 +262,7 @@ userparameter_mysql.conf.</description>
                     <key>mysql.status[Bytes_sent]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -307,7 +307,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_begin]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -350,7 +350,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_commit]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -393,7 +393,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_delete]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -436,7 +436,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_insert]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -479,7 +479,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_rollback]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -522,7 +522,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_select]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -565,7 +565,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                     <key>mysql.status[Com_update]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -610,7 +610,7 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <key>mysql.status[Questions]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -653,7 +653,7 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <key>mysql.status[Slow_queries]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -696,7 +696,7 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <key>mysql.status[Uptime]</key>
                     <delay>300</delay>
                     <history>7</history>
-                    <trends>60</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -780,8 +780,8 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.cpu.util[,mysql]</key>
-                    <delay>30</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -823,7 +823,7 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.mem[mysqld,,,,rss]</key>
-                    <delay>60</delay>
+                    <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -904,7 +904,7 @@ https://github.com/kleinstuff</description>
                             <snmp_oid/>
                             <key>mysql.databasesize[{#DATABASENAME}]</key>
                             <delay>3600</delay>
-                            <history>1</history>
+                            <history>7</history>
                             <trends>365</trends>
                             <status>0</status>
                             <value_type>3</value_type>
@@ -947,7 +947,7 @@ https://github.com/kleinstuff</description>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>mysql.numberoftables[{#DATABASENAME}]</key>
-                            <delay>1200</delay>
+                            <delay>3600</delay>
                             <history>7</history>
                             <trends>365</trends>
                             <status>0</status>
