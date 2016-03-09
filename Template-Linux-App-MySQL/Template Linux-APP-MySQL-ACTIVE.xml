@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-03-09T17:58:37Z</date>
+    <date>2016-03-09T18:26:52Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -780,7 +780,7 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.cpu.util[,mysql]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -823,7 +823,7 @@ UserParameter=mysql.status[*],echo &quot;show global status where Variable_name=
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.mem[mysqld,,,,rss]</key>
-                    <delay>120</delay>
+                    <delay>180</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
