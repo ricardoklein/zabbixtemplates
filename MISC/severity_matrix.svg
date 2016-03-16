@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="/home/klein/gravity_matrix.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="severity_matrix.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5803"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5805" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5737"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ff2a2a;stop-opacity:1;"
+         offset="0"
+         id="stop5739" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5731"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffb380;stop-opacity:1;"
+         offset="0"
+         id="stop5733" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5725"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffd5d5;stop-opacity:1;"
+         offset="0"
+         id="stop5727" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5719"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffe680;stop-opacity:1;"
+         offset="0"
+         id="stop5721" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5713"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#47ffff;stop-opacity:1;"
+         offset="0"
+         id="stop5715" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4257"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#00ffff;stop-opacity:1;"
+         offset="0"
+         id="stop4259" />
+      <stop
+         style="stop-color:#00ffff;stop-opacity:0;"
+         offset="1"
+         id="stop4261" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5719"
+       id="linearGradient5723"
+       x1="42.159254"
+       y1="503.79076"
+       x2="367.84074"
+       y2="503.79076"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99828583,0,0,1.213702,-7.6492837,-32.089481)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5725"
+       id="linearGradient5729"
+       x1="41.35713"
+       y1="609.77587"
+       x2="367.03861"
+       y2="609.77587"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99828583,0,0,1.213702,-7.6492837,-32.089481)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5731"
+       id="linearGradient5735"
+       x1="41.53282"
+       y1="716.09142"
+       x2="367.2143"
+       y2="716.09142"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99828583,0,0,1.213702,-7.6492837,-32.089481)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5737"
+       id="linearGradient5741"
+       x1="41.444968"
+       y1="822.07647"
+       x2="367.12645"
+       y2="822.07647"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99828583,0,0,1.213702,-7.6492837,-32.089481)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5737"
+       id="linearGradient5741-9"
+       x1="41.444969"
+       y1="822.07648"
+       x2="367.12646"
+       y2="822.07648"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0662915,0,0,1.2086841,277.83844,-29.103365)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5731"
+       id="linearGradient5735-1"
+       x1="41.532822"
+       y1="716.09143"
+       x2="367.21429"
+       y2="716.09143"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0662915,0,0,1.2086841,277.83844,-29.103365)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5725"
+       id="linearGradient5729-8"
+       x1="41.357128"
+       y1="609.77588"
+       x2="367.0386"
+       y2="609.77588"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0662915,0,0,1.2086841,277.83844,-29.103365)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5719"
+       id="linearGradient5723-5"
+       x1="42.159252"
+       y1="503.79077"
+       x2="367.84073"
+       y2="503.79077"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0662915,0,0,1.2086841,277.83844,-29.103365)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="506.8994"
+     inkscape:cy="382.23072"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1680"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <rect
+       style="opacity:0.66799999;fill:#00ffff;fill-opacity:1;stroke:#00ffff;stroke-width:6.01286411;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336"
+       width="319.66998"
+       height="118.35058"
+       x="36.988922"
+       y="391.15164"
+       ry="31.876627" />
+    <rect
+       style="fill:url(#linearGradient5723);fill-opacity:1;stroke:#ffe680;stroke-width:6.01286411;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-2"
+       width="319.66998"
+       height="118.35058"
+       x="37.164314"
+       y="520.18707"
+       ry="31.876627" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="97.855919"
+       y="593.42529"
+       id="text3338-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3340-0"
+         x="97.855919"
+         y="593.42529">WARNING</tspan></text>
+    <rect
+       style="fill:url(#linearGradient5729);fill-opacity:1;stroke:#ffd5d5;stroke-width:6.01286411;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-9"
+       width="319.66998"
+       height="118.35058"
+       x="36.36356"
+       y="648.82135"
+       ry="31.876627" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="107.05379"
+       y="721.63373"
+       id="text3338-00"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3340-3"
+         x="107.05379"
+         y="721.63373">AVERAGE</tspan></text>
+    <rect
+       style="fill:url(#linearGradient5735);fill-opacity:1;stroke:#ffb380;stroke-width:6.01286411;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-2-6"
+       width="319.66998"
+       height="118.35058"
+       x="36.538952"
+       y="777.85681"
+       ry="31.876627" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="145.22948"
+       y="852.19299"
+       id="text3338-0-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3340-0-6"
+         x="145.22948"
+         y="852.19299">HIGH</tspan></text>
+    <rect
+       style="fill:url(#linearGradient5741);fill-opacity:1;stroke:#ff2a2a;stroke-width:6.01286411;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-2-6-5"
+       width="319.66998"
+       height="118.35058"
+       x="36.451252"
+       y="906.49103"
+       ry="31.876627" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="103.14164"
+       y="978.3811"
+       id="text3338-0-6-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3340-0-6-1"
+         x="103.14164"
+         y="978.3811">PROBLEM</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3449"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-8,376.50628)"><flowRegion
+         id="flowRegion3451"><rect
+           id="rect3453"
+           width="308.57144"
+           height="85"
+           x="49.285713"
+           y="45.523052"
+           style="fill:#000000;stroke:#000000" /></flowRegion><flowPara
+         id="flowPara3455"
+         style="text-align:center;text-anchor:middle;fill:#000000;stroke:#000000">INFORMATION</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5875"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(0,320.26772)"><flowRegion
+         id="flowRegion5877"><rect
+           id="rect5879"
+           width="1041.4673"
+           height="146.47212"
+           x="5.0507627"
+           y="5.6729717" /></flowRegion><flowPara
+         id="flowPara5883"
+         style="text-align:center;text-anchor:middle">Severity Matrix</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5885"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion5887"><rect
+           id="rect5889"
+           width="641.44684"
+           height="90.913727"
+           x="373.75644"
+           y="169.31769" /></flowRegion><flowPara
+         id="flowPara5891" /></flowRoot>    <rect
+       style="opacity:0.66799999;fill:#00ffff;fill-opacity:1;stroke:#00ffff;stroke-width:8.63276863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-7"
+       width="661.66559"
+       height="117.86127"
+       x="370.23236"
+       y="392.38791"
+       ry="31.744837" />
+    <rect
+       style="fill:url(#linearGradient5723-5);fill-opacity:1;stroke:#ffe680;stroke-width:8.63276863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-2-8"
+       width="661.66559"
+       height="117.86127"
+       x="370.59537"
+       y="520.88995"
+       ry="31.744837" />
+    <rect
+       style="fill:url(#linearGradient5729-8);fill-opacity:1;stroke:#ffd5d5;stroke-width:8.63276863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-9-9"
+       width="661.66559"
+       height="117.86127"
+       x="368.93796"
+       y="648.99237"
+       ry="31.744837" />
+    <rect
+       style="fill:url(#linearGradient5735-1);fill-opacity:1;stroke:#ffb380;stroke-width:8.63276863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-2-6-8"
+       width="661.66559"
+       height="117.86127"
+       x="369.30096"
+       y="777.49438"
+       ry="31.744837" />
+    <rect
+       style="fill:url(#linearGradient5741-9);fill-opacity:1;stroke:#ff2a2a;stroke-width:8.63276863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-2-6-5-3"
+       width="661.66559"
+       height="117.86127"
+       x="369.11948"
+       y="905.59674"
+       ry="31.744837" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5893"
+       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(5.0507597,228.40475)"><flowRegion
+         id="flowRegion5895"><rect
+           id="rect5897"
+           width="642.45703"
+           height="89.90358"
+           x="373.75644"
+           y="170.32784"
+           style="font-size:27.5px" /></flowRegion><flowPara
+         id="flowPara5899"
+         style="font-size:20px"> - Services are not affected</flowPara><flowPara
+         id="flowPara5901"
+         style="font-size:20px"> - No Priority</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara6035">ex: Server rebooted, zabbix_agent version changed</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5903"
+       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(4.0406072,252.64841)"><flowRegion
+         id="flowRegion5905"><rect
+           id="rect5907"
+           width="643.4671"
+           height="102.02543"
+           x="373.75644"
+           y="275.3837"
+           style="font-size:27.5px" /></flowRegion><flowPara
+         id="flowPara5909"
+         style="font-size:20px"> - Services *can* be affected on medium/long term</flowPara><flowPara
+         id="flowPara5911"
+         style="font-size:20px"> - Low Priority<flowSpan
+   id="flowSpan5933"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:sans-serif;-inkscape-font-specification:sans-serif">.</flowSpan></flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara6037">ex: Disk free space below 10%, Non vital services unavailable, ex: ntp client.</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5913"
+       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(5.0507597,275.88192)"><flowRegion
+         id="flowRegion5915"><rect
+           id="rect5917"
+           width="642.45703"
+           height="91.923882"
+           x="371.73615"
+           y="380.43958"
+           style="font-size:27.5px" /></flowRegion><flowPara
+         id="flowPara5919"
+         style="font-size:20px"> - Services affected in some how and/or instability</flowPara><flowPara
+         id="flowPara5921"
+         style="font-size:20px"> - Medium Priority.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara6039">ex: Free disk space below 3%, Free Memory below 10%, server/device with wrong time/date.</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5937"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(3.0304546,297.09513)"><flowRegion
+         id="flowRegion5939"><rect
+           id="rect5941"
+           width="641.44684"
+           height="104.0457"
+           x="372.74628"
+           y="488.52588" /></flowRegion><flowPara
+         id="flowPara5943"
+         style="font-size:20px"> - Secondary services affected and/or down</flowPara><flowPara
+         style="font-size:20px"
+         id="flowPara5945"> - High Priority.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara6041">ex: Communication lost with server/device/network, secondary services offline (ex.: ntp server).</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5949"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(3.0304546,319.31848)"><flowRegion
+         id="flowRegion5951"><rect
+           id="rect5953"
+           width="644.47736"
+           height="106.066"
+           x="372.74628"
+           y="593.58173" /></flowRegion><flowPara
+         id="flowPara5955"
+         style="font-size:20px"> - Primary services affected / Core Business affected  </flowPara><flowPara
+         style="font-size:20px"
+         id="flowPara5957"> - Maximum priority.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara6043">ex: Vital services are down (ex: portal/erp/webservice down)</flowPara></flowRoot>  </g>
+</svg>
