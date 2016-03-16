@@ -15,7 +15,8 @@ SHAME ON YOU HP iLo!
 * SNMP checks for PowerSupply states;
 
 ## ToDo
-* Need to check a "trigger redundancy" on *"Overall System Rollup Status Error"* and *"Overall System Status Error"*
+* Need to check a "trigger redundancy" on *"Overall System Rollup Status Error"* and *"Overall System Status Error"*;
+* Align the trigger severity with my severity matrix;
 
 ## INSTALL
 * Import the xml template file;
