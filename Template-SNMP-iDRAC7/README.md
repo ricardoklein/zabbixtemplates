@@ -2,6 +2,7 @@
 
 Based on a zabbix template I found on github (but lost the repo). If you are the original owner, please tell me and I will reference you. <br>
 Does SNMP checks against iDRAC7 network interface (maybe you need to enable snmp on your iDRAC).
+SHAME ON YOU HP iLo!
 
 ## Tested on / need:
 * Zabbix 3.0.0
