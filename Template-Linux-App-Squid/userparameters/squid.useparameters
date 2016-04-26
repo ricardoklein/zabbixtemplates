@@ -1,0 +1,1 @@
+UserParameter=squid.metric[*],sh /etc/zabbix/scripts/squidclient_collector.sh "$1" "$2" "$3" "$4"
