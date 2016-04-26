@@ -5,23 +5,12 @@ This template uses all items as ACTIVE items. <br>
  * 3.4
 
 ##This template includes:
-* squidclient mgr:info for the params:
- * Service time all HTTP requests
- * Request failure ratio
- * Number of HTTP requests received/sec
- * Number of connected clients
- * Mean object size
- * File descriptors configured
- * File descriptors available (trigger if < 100)
- * CPU usage
- * Cache size on disk
- * Cache size in memory
- * Average HTTP requests per minute
+* squidclient mgr:info (metrics)
 * Number of Squid Processes running (trigger if < 1)
 * Squid Memory Usage
 
 ## ToDo
-* Add Triggers?
+* Add Triggers
 
 ## INSTALL
 * Import the .xml template file;
