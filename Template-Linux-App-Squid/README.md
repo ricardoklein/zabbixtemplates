@@ -17,6 +17,11 @@ This template uses all items as ACTIVE items. <br>
 * Upload the userparameters file to: /etc/zabbix/zabbix_agentd.d/squid.userparameter (or, where your zabbix user parameters are saved)
 * Upload the squid_collector.sh script to /etc/zabbix/scripts/ with exec permissions to zabbix user
 * Check if you have "UnsafeUserParameters=1" in your zabbix_agentd.conf
+* Check if the macros from the template corresponds to your installation and if dont, change it on your hosts macros:
+ * {$SQUIDBIN} == /usr/sbin/squid
+ * {$SQUIDCLIENTBIN} == /usr/bin/squidclient
+ * {$SQUIDPORT} == 3128
+ * {$SQUIDUSER} == squid
 
 # PS
 I always use my zabbix_agentd.conf file with "Include=/etc/zabbix/zabbix_agentd.d/", so I can save all user.parameters files in there.

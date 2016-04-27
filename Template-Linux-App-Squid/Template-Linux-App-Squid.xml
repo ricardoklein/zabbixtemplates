@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-04-26T18:10:27Z</date>
+    <date>2016-04-27T14:39:41Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -32,7 +32,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[{$SQUIDPORT}]</key>
+                    <key>net.tcp.port[,{$SQUIDPORT}]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -473,7 +473,7 @@ Depends on UserMacro (default 3128)</description>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
+                    <delta>1</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -709,7 +709,71 @@ Depends on UserMacro (default 3128)</description>
             <type>0</type>
             <dependencies/>
         </trigger>
+        <trigger>
+            <expression>{Template-Linux-APP-Squid:squid.metric[{$SQUIDCLIENTBIN},&quot;Available\ number\ of\ file\ descriptors&quot;,6,availablefds].last()}&lt;100</expression>
+            <name>{HOSTNAME}: Low Squid File Descriptors available</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Squid: Process not running</name>
+                    <expression>{Template-Linux-APP-Squid:proc.num[squid].last(0)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template-Linux-APP-Squid:net.tcp.port[,{$SQUIDPORT}].last()}&lt;&gt;1</expression>
+            <name>{HOSTNAME}: Squid port is not listening</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Squid: Process not running</name>
+                    <expression>{Template-Linux-APP-Squid:proc.num[squid].last(0)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
     </triggers>
+    <graphs>
+        <graph>
+            <name>SQUID: Clients accessing cache</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>1A7C11</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template-Linux-APP-Squid</host>
+                        <key>squid.metric[{$SQUIDCLIENTBIN},&quot;Number\ of\ clients\ accessing\ cache&quot;,6,&quot;clientsaccessingcache&quot;]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
     <value_maps>
         <value_map>
             <name>NET TCP CHECK</name>
