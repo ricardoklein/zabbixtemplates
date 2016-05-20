@@ -1,0 +1,2 @@
+UserParameter=hp.storage.controller.lld[*],/etc/zabbix/scripts/hp_storage_controller_lld.sh $1 $2
+UserParameter=hp.storage.controller.info[*],/etc/zabbix/scripts/hp_storage_controller_info.sh "$1" "$2" "$3" "$4" 
