@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-03-16T13:30:46Z</date>
+    <date>2016-07-22T18:20:08Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template-SNMP-iDRAC7</template>
-            <name>Template-SNMP-iDRAC7</name>
+            <template>Template-SNMP-iDRAC-7-8</template>
+            <name>Template-SNMP-iDRAC-7-8</name>
             <description/>
             <groups>
                 <group>
@@ -52,7 +52,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.300.50.1.7.1.1</snmp_oid>
                     <key>BiosDate</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -95,7 +95,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.300.50.1.8.1.1</snmp_oid>
                     <key>BiosVersion</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -137,8 +137,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.50.1.5.1.1</snmp_oid>
                     <key>CMOSBatteryStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -182,8 +182,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.2.0</snmp_oid>
                     <key>GlobalSystemLCDStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -227,8 +227,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.4.0</snmp_oid>
                     <key>GlobalSystemPowerState</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -272,8 +272,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.1.0</snmp_oid>
                     <key>GlobalSystemRollupStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -317,8 +317,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.2.1.0</snmp_oid>
                     <key>GlobalSystemStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>300</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -362,8 +362,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.3.0</snmp_oid>
                     <key>GlobalSystemStorageStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -408,7 +408,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.7.0</snmp_oid>
                     <key>idrac_acessurl</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -451,7 +451,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.11.0</snmp_oid>
                     <key>idrac_assettag</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -494,7 +494,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.1.3.3.0</snmp_oid>
                     <key>idrac_esc</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -537,7 +537,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.5.0</snmp_oid>
                     <key>idrac_firmwareversion</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -580,7 +580,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.1.3.12.0</snmp_oid>
                     <key>idrac_SystemModel</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -623,7 +623,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.2.0</snmp_oid>
                     <key>idrac_version</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -665,8 +665,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.60.1.15.1.1</snmp_oid>
                     <key>PowerUsageMinIdle</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -708,8 +708,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.60.1.5.1.1</snmp_oid>
                     <key>PowerUsageSensorStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -754,7 +754,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.1.1.8.1</snmp_oid>
                     <key>RAIDControllerFirmware</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -797,7 +797,7 @@
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.1.1.2.1</snmp_oid>
                     <key>RAIDControllerName</key>
                     <delay>86400</delay>
-                    <history>90</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
@@ -839,8 +839,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.1.1.37.1</snmp_oid>
                     <key>RAIDControllerStatus</key>
-                    <delay>30</delay>
-                    <history>90</history>
+                    <delay>600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -884,8 +884,8 @@
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.300.50.1.5.1.1</snmp_oid>
                     <key>SystemBiosStatus</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>3600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -923,14 +923,58 @@
                     <logtimefmt/>
                 </item>
                 <item>
+                    <name>System Power State</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.674.10892.5.2.4.0</snmp_oid>
+                    <key>SystemPowerState</key>
+                    <delay>300</delay>
+                    <history>30</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>4 server is on&#13;
+3 server is on stand-by</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
                     <name>Voltage Status Combined</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.200.10.1.12.1</snmp_oid>
                     <key>VoltageStatusCombined</key>
-                    <delay>90</delay>
-                    <history>90</history>
+                    <delay>600</delay>
+                    <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
@@ -1449,7 +1493,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:DiskStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:DiskStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Problem with Disk {#SNMPINDEX}</name>
                             <url/>
                             <status>0</status>
@@ -1588,7 +1632,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:FanStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:FanStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Problem with FAN {#SNMPVALUE}</name>
                             <url/>
                             <status>0</status>
@@ -1625,7 +1669,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Template-SNMP-iDRAC7</host>
+                                        <host>Template-SNMP-iDRAC-7-8</host>
                                         <key>FanSpeed.[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
@@ -1936,10 +1980,10 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:MemStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:MemStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Problem with memory in slot {#SNMPVALUE}</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -2209,20 +2253,20 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:NetConnStatus.[{#SNMPINDEX}].diff(0)}=1</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:NetConnStatus.[{#SNMPINDEX}].diff(0)}=1) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Connection Status has changed on NIC {#SNMPINDEX}</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>2</priority>
                             <description/>
                             <type>0</type>
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:NetStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:NetStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Error on NIC {#SNMPINDEX}</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
@@ -2494,20 +2538,20 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:PowerSupplySensorState.[{#SNMPINDEX}].last(0)}&lt;&gt;1</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:PowerSupplySensorState.[{#SNMPINDEX}].last(0)}&lt;&gt;1) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Error on PSU {#SNMPINDEX} State</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:PowerSupplyStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:PowerSupplyStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Problem with PSU {#SNMPINDEX}</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -2599,10 +2643,10 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>({Template-SNMP-iDRAC7:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3 and {Template-SNMP-iDRAC7:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;2) or ({Template-SNMP-iDRAC7:ProcStatus.[{#SNMPINDEX}].last(86400)}&lt;&gt;2 and {Template-SNMP-iDRAC7:ProcStatus.[{#SNMPINDEX}].last(0)}=2)</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3 and {Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;2) or ({Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(86400)}&lt;&gt;2 and {Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(0)}=2) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Error on Processor {#SNMPINDEX}</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
@@ -2916,7 +2960,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:TempStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>{Template-SNMP-iDRAC-7-8:TempStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
                             <name>Problem with Temperature Sensor {#SNMPVALUE}</name>
                             <url/>
                             <status>0</status>
@@ -2926,7 +2970,7 @@
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:TempValue.[{#SNMPINDEX}].last()} &gt;= {Template-SNMP-iDRAC7:TempCritUpLimit.[{#SNMPINDEX}].last()}</expression>
+                            <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &gt;= {Template-SNMP-iDRAC-7-8:TempCritUpLimit.[{#SNMPINDEX}].last()}</expression>
                             <name>Temperature on {#SNMPVALUE} critically high</name>
                             <url/>
                             <status>0</status>
@@ -2936,7 +2980,7 @@
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:TempValue.[{#SNMPINDEX}].last()} &lt;= {Template-SNMP-iDRAC7:TempCritLowLimit.[{#SNMPINDEX}].last()}</expression>
+                            <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &lt;= {Template-SNMP-iDRAC-7-8:TempCritLowLimit.[{#SNMPINDEX}].last()}</expression>
                             <name>Temperature on {#SNMPVALUE} critically low</name>
                             <url/>
                             <status>0</status>
@@ -2946,11 +2990,11 @@
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:TempValue.[{#SNMPINDEX}].last()} &gt; {Template-SNMP-iDRAC7:TempWarnUpLimit.[{#SNMPINDEX}].last()}&#13;
+                            <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &gt; {Template-SNMP-iDRAC-7-8:TempWarnUpLimit.[{#SNMPINDEX}].last()}&#13;
 &#13;
 and&#13;
 &#13;
-{Template-SNMP-iDRAC7:TempValue.[{#SNMPINDEX}].last()} &lt; {Template-SNMP-iDRAC7:TempCritUpLimit.[{#SNMPINDEX}].last()}</expression>
+{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &lt; {Template-SNMP-iDRAC-7-8:TempCritUpLimit.[{#SNMPINDEX}].last()}</expression>
                             <name>Temperature on {#SNMPVALUE} to high</name>
                             <url/>
                             <status>0</status>
@@ -2960,11 +3004,11 @@ and&#13;
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:TempValue.[{#SNMPINDEX}].last()} &lt; {Template-SNMP-iDRAC7:TempWarnLowLimit.[{#SNMPINDEX}].last()}&#13;
+                            <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &lt; {Template-SNMP-iDRAC-7-8:TempWarnLowLimit.[{#SNMPINDEX}].last()}&#13;
 &#13;
 and&#13;
 &#13;
-{Template-SNMP-iDRAC7:TempValue.[{#SNMPINDEX}].last()} &gt; {Template-SNMP-iDRAC7:TempCritLowLimit.[{#SNMPINDEX}].last()}</expression>
+{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &gt; {Template-SNMP-iDRAC-7-8:TempCritLowLimit.[{#SNMPINDEX}].last()}</expression>
                             <name>Temperature on {#SNMPVALUE} to low</name>
                             <url/>
                             <status>0</status>
@@ -3001,7 +3045,7 @@ and&#13;
                                     <calc_fnc>7</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Template-SNMP-iDRAC7</host>
+                                        <host>Template-SNMP-iDRAC-7-8</host>
                                         <key>TempValue.[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
@@ -3092,7 +3136,7 @@ and&#13;
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:VoltageStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:VoltageStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Error on Voltage Sensor {#SNMPVALUE}</name>
                             <url/>
                             <status>0</status>
@@ -3367,20 +3411,20 @@ and&#13;
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:VolumeDiskState.[{#SNMPINDEX}].last(0)}&lt;&gt;2</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:VolumeDiskState.[{#SNMPINDEX}].last(0)}&lt;&gt;2) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Volume {#SNMPINDEX} Error</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template-SNMP-iDRAC7:VolumeStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
+                            <expression>({Template-SNMP-iDRAC-7-8:VolumeStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
                             <name>Volume {#SNMPINDEX} Status Error</name>
                             <url/>
-                            <status>0</status>
+                            <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -3398,8 +3442,8 @@ and&#13;
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemStatus.nodata(300)}</expression>
-            <name>No iDrac data for &gt; 5 minutes</name>
+            <expression>{Template-SNMP-iDRAC-7-8:GlobalSystemStatus.nodata(600)}</expression>
+            <name>No iDrac data for &gt; 10 minutes</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -3408,27 +3452,27 @@ and&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemRollupStatus.last(0)}&lt;&gt;3</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemRollupStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>Overall System Rollup Status Error</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemRollupStatus.last(0)}&gt;4</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemRollupStatus.last(0)}&gt;4) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>Overall System Rollup Status Error</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemStatus.last()}&lt;&gt;3</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>Overall System Status Error</name>
             <url/>
             <status>0</status>
@@ -3438,7 +3482,7 @@ and&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemStatus.last()}&gt;4</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&gt;4) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>Overall System Status Error</name>
             <url/>
             <status>0</status>
@@ -3448,7 +3492,7 @@ and&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:CMOSBatteryStatus.last(0)}&lt;&gt;3</expression>
+            <expression>{Template-SNMP-iDRAC-7-8:CMOSBatteryStatus.last(0)}&lt;&gt;3</expression>
             <name>Problem with CMOS Battery</name>
             <url/>
             <status>0</status>
@@ -3458,47 +3502,52 @@ and&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:RAIDControllerStatus.last(0)}&lt;&gt;3</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:RAIDControllerStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>RAID Controller Error</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemStorageStatus.last(0)}&lt;&gt;3</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStorageStatus.last(0)}&gt;4) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>Storage System Status Error</name>
             <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <dependencies/>
-        </trigger>
-        <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemStorageStatus.last(0)}&gt;4</expression>
-            <name>Storage System Status Error</name>
-            <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:GlobalSystemPowerState.last(0)}&lt;&gt;4 and {Template-SNMP-iDRAC7:GlobalSystemPowerState.last(0)}&lt;&gt;0</expression>
+            <expression>{Template-SNMP-iDRAC-7-8:GlobalSystemStorageStatus.last(0)}&lt;&gt;3</expression>
+            <name>Storage System Status Error</name>
+            <url/>
+            <status>1</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>RAID Controller Error</name>
+                    <expression>({Template-SNMP-iDRAC-7-8:RAIDControllerStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template-SNMP-iDRAC-7-8:GlobalSystemPowerState.last(0)}&lt;&gt;4 and {Template-SNMP-iDRAC-7-8:GlobalSystemPowerState.last(0)}&lt;&gt;0</expression>
             <name>System is not online</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-SNMP-iDRAC7:VoltageStatusCombined.last(0)}&lt;&gt;3</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:VoltageStatusCombined.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
             <name>Voltage Status Error</name>
             <url/>
             <status>0</status>
