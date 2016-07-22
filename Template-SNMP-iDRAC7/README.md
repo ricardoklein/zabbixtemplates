@@ -1,4 +1,4 @@
-# Zabbix SNMP Template for Dell iDRAC7
+# Zabbix SNMP Template for Dell iDRAC7/8
 
 Based on a zabbix template I found on github (but lost the repo). If you are the original owner, please tell me and I will reference you. <br>
 Does SNMP checks against iDRAC7 and iDRAC8 network interface (maybe you need to enable snmp on your iDRAC). <br>
