@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-07-22T18:20:08Z</date>
+    <date>2016-07-22T19:12:54Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -3472,7 +3472,7 @@ and&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&lt;5)</expression>
             <name>Overall System Status Error</name>
             <url/>
             <status>0</status>
@@ -3482,7 +3482,7 @@ and&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&gt;4) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
+            <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&gt;4)</expression>
             <name>Overall System Status Error</name>
             <url/>
             <status>0</status>
