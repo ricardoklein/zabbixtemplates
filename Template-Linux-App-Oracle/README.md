@@ -26,3 +26,6 @@ Based on lots of examples from other templates, and the first I did using python
 # PS
 I always use my zabbix_agentd.conf file with "Include=/etc/zabbix/zabbix_agentd.d/", so I can save all user.parameters files in there.
 
+
+# Examples:
+![alt text](https://github.com/kleinstuff/zabbixtemplates/blob/master/Template-Linux-App-Oracle/images/uorapy_example_01.png "Example 1")
