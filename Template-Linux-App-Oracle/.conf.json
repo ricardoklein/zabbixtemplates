@@ -1,0 +1,11 @@
+{
+        "connection_config": {
+                "user": "ZABBIX",
+                "password": "XXXpwdXXX",
+                "host": "127.0.0.1",
+                "database": "SID"
+        },
+        "objects_to_check": ["FUNCTION", "TRIGGER", "PROCEDURE", "VIEW", "PACKAGE", "PACKAGE_BODY"],
+        "owners_to_check": ["DBASS", "POSEAD"]
+
+}
