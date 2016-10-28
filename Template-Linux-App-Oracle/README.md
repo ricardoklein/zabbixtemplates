@@ -28,4 +28,8 @@ I always use my zabbix_agentd.conf file with "Include=/etc/zabbix/zabbix_agentd.
 
 
 # Examples:
-![alt text](https://github.com/kleinstuff/zabbixtemplates/blob/master/Template-Linux-App-Oracle/images/uorapy_example_01.png "Example 1")
+![alt text](https://github.com/kleinstuff/zabbixtemplates/blob/master/Template-Linux-App-Oracle/images/uorapy_example_01.png "Example 01")
+
+![alt text](https://github.com/kleinstuff/zabbixtemplates/blob/master/Template-Linux-App-Oracle/images/uorapy_example_02.png "Example 02")
+
+![alt text](https://github.com/kleinstuff/zabbixtemplates/blob/master/Template-Linux-App-Oracle/images/uorapy_example_03.png "Example 03")
