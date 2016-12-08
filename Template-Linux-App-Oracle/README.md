@@ -19,7 +19,7 @@ Based on lots of examples from other templates, and the first I did using python
 ## INSTALL
 * Import the Template-Linux-APP-Oracle_uOraPy.xml template file;
 * Upload scripts "uorapy" to your /etc/zabbix/scripts folder;
-* Install Oracle Instant Client (the -devel and -basic should be enough), or, you can use the libs from your oracle install just creating those symlinks (versions may vary):
+* Install Oracle Instant Client (the -devel and -basic should be enough), or, you can use the libs from your oracle install just creating some symlinks (versions may vary):
 ```bash
  ln -s $ORACLE_HOME/lib/libclntsh.so.11.1 /usr/lib64/
  ln -s $ORACLE_HOME/lib/libnnz11.so /usr/lib64/
