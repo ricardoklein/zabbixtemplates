@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.0</version>
+    <date>2016-12-12T12:58:50Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template-SimpleWebCheck</template>
+            <name>Template-SimpleWebCheck</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>WebCheck</name>
+                </application>
+            </applications>
+            <items/>
+            <discovery_rules/>
+            <macros>
+                <macro>
+                    <macro>{$USEHTTPS}</macro>
+                    <value>1</value>
+                </macro>
+                <macro>
+                    <macro>{$WEBCHECK_REQSTRING}</macro>
+                    <value>somestring</value>
+                </macro>
+                <macro>
+                    <macro>{$WEBCHECK_WEBSITEURL}</macro>
+                    <value>someurl</value>
+                </macro>
+            </macros>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>
