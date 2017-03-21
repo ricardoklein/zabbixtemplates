@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-11-02T17:11:48Z</date>
+    <date>2017-03-21T16:26:04Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -651,7 +651,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are invalid FUNCTIONS on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;show_invalid_objects&quot;,{#OWNER},&quot;PACKAGE&quot;].strlen()}&gt;1</expression>
@@ -661,7 +670,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are invalid PACKAGES on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;show_invalid_objects&quot;,{#OWNER},&quot;PACKAGE_BODY&quot;].strlen()}&gt;1</expression>
@@ -671,7 +689,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are invalid PACKAGE_BODIES on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;show_invalid_objects&quot;,{#OWNER},&quot;PROCEDURE&quot;].strlen()}&gt;1</expression>
@@ -681,7 +708,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are invalid PROCEDURES on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;show_invalid_objects&quot;,{#OWNER},&quot;TRIGGER&quot;].strlen()}&gt;1</expression>
@@ -691,7 +727,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are invalid TRIGGERS on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;show_invalid_objects&quot;,{#OWNER},&quot;VIEW&quot;].strlen()}&gt;1</expression>
@@ -701,7 +746,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are invalid VIEWS on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;show_unusable_indexes&quot;,{#OWNER}].strlen()}&gt;1</expression>
@@ -711,7 +765,16 @@ You need to set this in the CONFIG file as:&#13;
                             <priority>3</priority>
                             <description>There are indexes with staths &quot;ususable&quot; on the oracle database</description>
                             <type>0</type>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOSTNAME}: Can't connect on oracle port TCP/{$ORACLE_SERVICE_PORT}</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:net.tcp.listen[{$ORACLE_SERVICE_PORT}].last()}=0</expression>
+                                </dependency>
+                                <dependency>
+                                    <name>{HOSTNAME}: There are disks with status != ONLINE on the ORACLE ASM</name>
+                                    <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;not_online_disks_count&quot;].last()}&lt;&gt;0</expression>
+                                </dependency>
+                            </dependencies>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
@@ -1240,7 +1303,7 @@ You need to set this in the CONFIG file as:&#13;
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;active_sessions_count&quot;].last()}&gt;{$UORAPY_ACTIVE_SESSIONS_NUMBER_WARNING}</expression>
+            <expression>{Template-Linux-APP-Oracle-uOraPy:uorapy[&quot;{$UORAPY_SCRIPT}&quot;,&quot;{$UORAPY_CONFIG}&quot;,&quot;active_sessions_count&quot;].avg(#2)}&gt;{$UORAPY_ACTIVE_SESSIONS_NUMBER_WARNING}</expression>
             <name>{HOSTNAME}: Too much active sessions</name>
             <url/>
             <status>0</status>
@@ -1256,7 +1319,7 @@ You need to set this in the CONFIG file as:&#13;
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
-            <yaxismax>35.0000</yaxismax>
+            <yaxismax>50.0000</yaxismax>
             <show_work_period>1</show_work_period>
             <show_triggers>1</show_triggers>
             <type>0</type>
@@ -1271,7 +1334,7 @@ You need to set this in the CONFIG file as:&#13;
             <graph_items>
                 <graph_item>
                     <sortorder>0</sortorder>
-                    <drawtype>1</drawtype>
+                    <drawtype>5</drawtype>
                     <color>00CC00</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>

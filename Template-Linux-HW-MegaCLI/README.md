@@ -23,9 +23,9 @@ Of course you need to have MegaCLI instaled, please set the {$MEGACLIBIN} Macro 
 * Setup SUDO permissions from zabbixsudo file (on CentOS/RedHat/Fedora you can simply copy the file to /etc/sudoers.d/);
 * Upload support scripts to /etc/zabbix/scripts;
 * Set execution permissions to /etc/zabbix/scripts/*;
-* Upload the UserParameter file to /etc/zabbix/zabbix_agentd.conf.d/ (or, where your zabbix user parameters are saved);
+* Upload the UserParameter file to /etc/zabbix/zabbix_agentd.d/ (or, where your zabbix user parameters are saved);
 * Comment (if you have) this directive on /etc/sudoers: "Defaults    requiretty";
 
 # PS
-I always use my zabbix_agentd.conf file with "Include=/etc/zabbix/zabbix_agentd.conf.d/", so I can save all templatename.user.parameters files in there.
+I always use my zabbix_agentd.conf file with "Include=/etc/zabbix/zabbix_agentd.d/", so I can save all templatename.user.parameters files in there.
 
