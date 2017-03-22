@@ -293,6 +293,64 @@ def not_online_disks_count():
     for i in sqlresult:
         print i[0]
 
+def result_cache_total_memory():
+    sql = "SELECT \
+                a.block_count * b.block_size \
+                max_mem_bytes \
+             FROM \
+               (SELECT value block_count \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Block Count Maximum') a, \
+               (SELECT (value / 1024) block_size \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Block Size (Bytes)') b"
+    sqlresult = execute_query(sql)
+    for i in sqlresult:
+        print i[0]
+
+def result_cache_used_memory():
+    sql = "SELECT \
+                a.block_count * b.block_size \
+                max_mem_bytes \
+             FROM \
+               (SELECT value block_count \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Block Count Current') a, \
+               (SELECT (value / 1024) block_size \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Block Size (Bytes)') b"
+    sqlresult = execute_query(sql)
+    for i in sqlresult:
+        print i[0]
+
+def result_cache_hit_ratio():
+    sql = "SELECT \
+                100 * ( 1 - (b.qtde_suce + c.qtde_falh)/(a.qtde_find)) hit_ratio \
+             FROM \
+               (SELECT value qtde_find \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Find Count') a, \
+               (SELECT value qtde_suce \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Create Count Success') b, \
+               (SELECT value qtde_falh \
+                  FROM v$result_cache_statistics \
+                  WHERE name = 'Create Count Failure') c"
+    sqlresult = execute_query(sql)
+    for i in sqlresult:
+        print i[0]
+
+def result_cache_create_failures():
+    sql = "SELECT \
+                value falhas \
+             FROM v$result_cache_statistics \
+             WHERE name = 'Create Count Failure'"
+    sqlresult = execute_query(sql)
+    for i in sqlresult:
+        print i[0]
+
+
+
 if __name__ == "__main__":
     if sys.argv[2] == "db_owners_lld":
         db_owners_lld()
@@ -326,3 +384,12 @@ if __name__ == "__main__":
         show_disk_group_used_size(sys.argv[3])
     if sys.argv[2] == "show_disk_group_free_size":
         show_disk_group_free_size(sys.argv[3])
+    if sys.argv[2] == "result_cache_total_memory":
+        result_cache_total_memory()
+    if sys.argv[2] == "result_cache_used_memory":
+        result_cache_used_memory()
+    if sys.argv[2] == "result_cache_hit_ratio":
+        result_cache_hit_ratio()
+    if sys.argv[2] == "result_cache_create_failures":
+        result_cache_create_failures()
+
