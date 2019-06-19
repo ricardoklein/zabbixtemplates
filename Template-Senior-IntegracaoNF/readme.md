@@ -11,7 +11,6 @@ This script checks if the NFs exist and have been integrated with the company he
 * You name it...
 
 ## INSTALL
-* Import the Template-Linux-APP-Oracle_uOraPy.xml template file;
 * Upload scripts "uorapy" to your /etc/zabbix/scripts folder;
 
 # PS
